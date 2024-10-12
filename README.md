@@ -206,6 +206,10 @@ try {
 }
 ```
 
+## Acknowledgments
+
+Special thanks to the creators and maintainers of [Bible API](https://bible-api.com/) for providing a valuable resource for accessing Bible verses and scriptures. Your hard work makes it easier for developers to integrate spiritual content into their applications.
+
 ## Contribution
 
 Contributions are welcome! If you want to contribute to this package, please follow these steps:

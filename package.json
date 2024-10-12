@@ -1,5 +1,5 @@
 {
-  "name": "bible-verse-package",
+  "name": "bible-snippets",
   "version": "1.0.0",
   "description": "An npm package to get Bible verses, random verses, Psalms, and promises.",
   "main": "index.js",
