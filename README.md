@@ -1,3 +1,4 @@
+````markdown
 # BibleVerse Package
 
 **BibleVerse** is an npm package that allows you to fetch specific Bible verses, random verses, Psalms, and Bible promises. This package is perfect for developers looking to integrate Bible verses into their applications, websites, or spiritual projects.
@@ -17,6 +18,7 @@ You can install the package via npm. Open your terminal and run:
 ```bash
 npm install bible-verse-package
 ```
+````
 
 ## Usage
 
@@ -50,25 +52,21 @@ bibleVerse
 **Example Output**:
 
 ```json
-Specific Verse: {
-  reference: 'John 3:20',
-  verses: [
+{
+  "reference": "John 3:16",
+  "verses": [
     {
-      book_id: 'JHN',
-      book_name: 'John',
-      chapter: 3,
-      verse: 20,
-      text: '\n' +
-        'For everyone who does evil hates the light, and doesn’t come to the light, lest his works would be exposed.\n' +
-        '\n'
+      "book_id": "JHN",
+      "book_name": "John",
+      "chapter": 3,
+      "verse": 16,
+      "text": "For God so loved the world, that he gave his only Son, that whoever believes in him should not perish but have eternal life."
     }
   ],
-  text: '\n' +
-    'For everyone who does evil hates the light, and doesn’t come to the light, lest his works would be exposed.\n' +
-    '\n',
-  translation_id: 'web',
-  translation_name: 'World English Bible',
-  translation_note: 'Public Domain'
+  "text": "For God so loved the world, that he gave his only Son, that whoever believes in him should not perish but have eternal life.",
+  "translation_id": "web",
+  "translation_name": "World English Bible",
+  "translation_note": "Public Domain"
 }
 ```
 
@@ -94,10 +92,10 @@ bibleVerse
       "book_name": "Luke",
       "chapter": 19,
       "verse": 32,
-      "text": "Those who were sent went away, and found things just as he had told them.\n"
+      "text": "Those who were sent went away, and found things just as he had told them."
     }
   ],
-  "text": "Those who were sent went away, and found things just as he had told them.\n",
+  "text": "Those who were sent went away, and found things just as he had told them.",
   "translation_id": "web",
   "translation_name": "World English Bible",
   "translation_note": "Public Domain"
@@ -119,41 +117,34 @@ bibleVerse
 
 ```json
 {
-  reference: 'Psalms 23:1-3',
-  verses: [
+  "reference": "Psalms 23:1-3",
+  "verses": [
     {
-      book_id: 'PSA',
-      book_name: 'Psalms',
-      chapter: 23,
-      verse: 1,
-      text: 'Yahweh is my shepherd:\nI shall lack nothing.\n'
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 23,
+      "verse": 1,
+      "text": "Yahweh is my shepherd:\nI shall lack nothing."
     },
     {
-      book_id: 'PSA',
-      book_name: 'Psalms',
-      chapter: 23,
-      verse: 2,
-      text: 'He makes me lie down in green pastures.\n' +
-        'He leads me beside still waters.\n'
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 23,
+      "verse": 2,
+      "text": "He makes me lie down in green pastures.\nHe leads me beside still waters."
     },
     {
-      book_id: 'PSA',
-      book_name: 'Psalms',
-      chapter: 23,
-      verse: 3,
-      text: 'He restores my soul.\n' +
-        'He guides me in the paths of righteousness for his name’s sake.\n'
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 23,
+      "verse": 3,
+      "text": "He restores my soul.\nHe guides me in the paths of righteousness for his name’s sake."
     }
   ],
-  text: 'Yahweh is my shepherd:\n' +
-    'I shall lack nothing.\n' +
-    'He makes me lie down in green pastures.\n' +
-    'He leads me beside still waters.\n' +
-    'He restores my soul.\n' +
-    'He guides me in the paths of righteousness for his name’s sake.\n',
-  translation_id: 'web',
-  translation_name: 'World English Bible',
-  translation_note: 'Public Domain'
+  "text": "Yahweh is my shepherd:\nI shall lack nothing.\nHe makes me lie down in green pastures.\nHe leads me beside still waters.\nHe restores my soul.\nHe guides me in the paths of righteousness for his name’s sake.",
+  "translation_id": "web",
+  "translation_name": "World English Bible",
+  "translation_note": "Public Domain"
 }
 ```
 
@@ -162,8 +153,10 @@ bibleVerse
 To retrieve a random Psalm, use the following method:
 
 ```javascript
-const randomPsalm = bibleVerse.getRandomPsalm();
-console.log(randomPsalm);
+bibleVerse
+  .getRandomPsalm()
+  .then((randomPsalm) => console.log(randomPsalm))
+  .catch((error) => console.error(error));
 ```
 
 **Example Output**:
@@ -182,8 +175,10 @@ console.log(randomPsalm);
 You can fetch a random Bible promise like this:
 
 ```javascript
-const randomPromise = bibleVerse.getRandomPromise();
-console.log(randomPromise);
+bibleVerse
+  .getRandomPromise()
+  .then((randomPromise) => console.log(randomPromise))
+  .catch((error) => console.error(error));
 ```
 
 **Example Output**:
