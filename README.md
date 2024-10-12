@@ -1,4 +1,4 @@
-````markdown
+
 # BibleVerse Package
 
 **BibleVerse** is an npm package that allows you to fetch specific Bible verses, random verses, Psalms, and Bible promises. This package is perfect for developers looking to integrate Bible verses into their applications, websites, or spiritual projects.
@@ -18,7 +18,7 @@ You can install the package via npm. Open your terminal and run:
 ```bash
 npm install bible-verse-package
 ```
-````
+
 
 ## Usage
 
