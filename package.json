@@ -1,0 +1,23 @@
+{
+  "name": "bible-verse-package",
+  "version": "1.0.1",
+  "description": "An npm package to get Bible verses, random verses, Psalms, and promises.",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "keywords": [
+    "bible",
+    "verse",
+    "psalm",
+    "faith",
+    "Jesus",
+    "Holy Spirit",
+    "God"
+  ],
+  "author": "Paul Kamu",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.7.7"
+  }
+}
